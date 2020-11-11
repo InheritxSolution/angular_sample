@@ -1,0 +1,55 @@
+<div class="m-grid m-grid--hor m-grid--root m-page">
+    <div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--signin m-login--2 m-login-2--skin-2 forget-bg"
+        id="m_login">
+        <div class="m-grid__item m-grid__item--fluid login-top	m-login__wrapper">
+            <div class="m-login__container">
+                <div class="m-login__logo">
+                    <a>
+                        <img src="favicon.ico" class="logo-img">
+                    </a>
+                </div>
+                <div class="m-login__signin">
+                    <div class="m-login__head">
+                        <h3 class="m-login__title">
+                            Sign in to Admin
+                        </h3>
+                    </div>
+                    <div class="m-login__form m-form">
+                        <div class="form-group m-form__group reletive-icon">
+                            <input class="form-control m-input input-padding" type="text" placeholder="Email"
+                                autocomplete="off">
+                            <span class="material-icons span-icon p-0">
+                                email
+                            </span>
+                        </div>
+                        <div class="form-group m-form__group reletive-icon">
+                            <input [type]="hide ? 'password' : 'text'"
+                                class="form-control m-input m-login__form-input--last input-padding" type="password"
+                                placeholder="Password">
+                            <button type="button" class="pass-icon" mat-icon-button matSuffix (click)="hide = !hide"
+                                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                            <span class="material-icons p-0 span-icon">
+                                lock
+                            </span>
+                        </div>
+                        <div class="row m-login__form-sub">
+                            <div class="col m--align-right m-login__form-right">
+                                <a id="m_login_forget_password" routerLink="/auth/forgotpassword" class="m-link">
+                                    Forget Password ?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m-login__form-action">
+                            <button (click)="onSubmit()"
+                                class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary">
+                                Sign In
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

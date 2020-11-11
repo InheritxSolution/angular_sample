@@ -1,0 +1,8 @@
+span{
+    color: red;
+    padding: 3px 0px 0px 27px;
+}
+.login-top{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,6 @@
+<mat-paginator [length]="length" [pageSize]="limit" [pageSizeOptions]="pageSizeOptions" (page)="onPageChange($event)"
+#paginator>
+</mat-paginator>
+<span *ngIf="length == 0">
+<p style="text-align: center;">No Records Found.</p>
+</span>

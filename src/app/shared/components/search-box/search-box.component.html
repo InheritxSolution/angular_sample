@@ -1,0 +1,5 @@
+<mat-form-field appearance="outline" class="customer_textbox">
+    <mat-label>{{label}}</mat-label>
+    <mat-icon matPrefix class="search-box-icon"><img src="assets/app/media/img/search.svg"></mat-icon>
+    <input (keyup)="applyFilter($event.target.value)" matInput name="lat" type="text">
+  </mat-form-field>
